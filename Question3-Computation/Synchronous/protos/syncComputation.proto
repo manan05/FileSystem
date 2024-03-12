@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+
+service computation{
+    rpc Add(AddRequest) returns (AddResponse) {}
+    
+    rpc Sort(SortRequest) returns (SortResponse) {}
+}
+
+message AddRequest{
+    int32 a = 1;
+    int32 b = 2;
+}
+
+message AddResponse{
+    int32 result = 1;
+}
+
+message SortRequest{
+    repeated int32 inputList = 1;
+}
+
+message SortResponse{
+    repeated int32 sortedList = 1;
+}

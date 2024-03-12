@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+service Q1FileSystem {
+    rpc UploadFunction (UploadRequest) returns (UploadResponse) {}
+
+    rpc DownloadFunction (DownloadRequest) returns (DownloadResponse) {}
+
+    rpc DeleteFunction (DeleteRequest) returns (DeleteResponse) {}
+
+    rpc RenameFunction (RenameRequest) returns (RenameResponse) {} 
+}
+
+message UploadRequest {
+    string fileName = 1;
+    bytes fileContent = 2;
+}
+
+message UploadResponse {
+    string response = 1;
+}
+
+message DownloadRequest {
+    string fileName = 1;
+}
+
+message DownloadResponse {
+    bytes fileContent = 1;
+}
+
+message DeleteRequest {
+    string fileName = 1;
+}
+
+message DeleteResponse {
+    string response = 1;
+}
+
+message RenameRequest {
+    string oldFileName = 1;
+    string newFileName = 2;
+}
+
+message RenameResponse {
+    string response = 1;
+}

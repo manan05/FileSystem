@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service SynchronizedFileSystem {
+    rpc SyncFileOperation(FileOperation) returns (OperationResult) {}
+}
+
+message FileOperation {
+    string fileName = 1;
+    bytes content = 2;
+}
+
+message OperationResult{
+    bool success = 1;
+    string message = 2;
+}

@@ -1,7 +1,6 @@
 ###Manan Arora
 ###UTA ID: 1002143328
-###Muskan Jain 
-###UTA ID: 1002033280
+
 # File System Server and Client
 
 ## Description

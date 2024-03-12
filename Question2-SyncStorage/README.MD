@@ -1,7 +1,5 @@
-###Manan Arora
-###UTA ID: 1002143328
-###Muskan Jain 
-###UTA ID: 1002033280
+### Manan Arora
+### UTA ID: 1002143328
 
 # Server-Client File Synchronization System
 
